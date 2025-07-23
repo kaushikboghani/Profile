@@ -1,0 +1,385 @@
+<mvc:View xmlns:uxap="sap.uxap"
+    xmlns:commons="sap.suite.ui.commons" controllerName="profile.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:cssgrid="sap.ui.layout.cssgrid"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout" height="100%">
+    <Page id="page" title="{i18n>title}" showHeader="false">
+        <!-- <ObjectAttribute text="Recent BCA graduate currently training in SAP Fiori. I have a solid background in coding and am passionate about developing user-friendly applications and solutions. Eager to apply my skills in technology and grow in the field of enterprise software."/> -->
+
+
+        <uxap:ObjectPageLayout useIconTabBar="true">
+            <uxap:headerTitle>
+                <uxap:ObjectPageDynamicHeaderTitle >
+                    <uxap:expandedHeading>
+                        <Title text="Kaushik Boghani" wrapping="true"/>
+                    </uxap:expandedHeading>
+
+                    <uxap:snappedHeading>
+                        <FlexBox fitContainer="true" alignItems="Center">
+                            <!-- <Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/> -->
+                            <Avatar src="./model/image.jpeg" displayShape="Circle" class="sapUiSmallMarginEnd">
+                                <detailBox>
+                                    <LightBox>
+                                        <LightBoxItem imageSrc="./model/image.jpeg" alt="Kaushik Boghani" title="Kaushik Boghani" subtitle="SAP FIORI/UI5 Developer">
+                                        </LightBoxItem>
+                                    </LightBox>
+                                </detailBox>
+                            </Avatar>
+                            <Title text="Kaushik Boghani" wrapping="true" />
+                        </FlexBox>
+                    </uxap:snappedHeading>
+
+                    <uxap:expandedContent>
+                        <Text text="SAP FIORI/UI5 Developer"/>
+                    </uxap:expandedContent>
+
+                    <uxap:snappedContent>
+                        <Text text="SAP FIORI/UI5 Developer"/>
+                    </uxap:snappedContent>
+
+                    <uxap:snappedTitleOnMobile>
+                        <Title text="SAP FIORI/UI5 Developer"/>
+                    </uxap:snappedTitleOnMobile>
+
+                    <uxap:actions>
+                        <OverflowToolbarButton icon="sap-icon://navigation-down-arrow" type="Transparent" press="onPressHeadingDown"/>
+                    </uxap:actions>
+                </uxap:ObjectPageDynamicHeaderTitle>
+            </uxap:headerTitle>
+            <uxap:headerContent>
+                <FlexBox wrap="Wrap" fitContainer="true">
+                    <ObjectAttribute text="Recent BCA graduate currently training in SAP Fiori. I have a solid background in coding and am passionate about developing user-friendly applications and solutions. Eager to apply my skills in technology and grow in the field of enterprise software."/>
+                </FlexBox>
+            </uxap:headerContent>
+
+            <uxap:sections>
+                <uxap:ObjectPageSection title="Profile Summary">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+                                <form:content>
+                                    <Title text="Personal Information" />
+
+                                    <Label design="Bold" text="Full Name" />
+                                    <Text text="Kaushik Boghani" />
+                                    <Label design="Bold" text="Date of Birth" />
+                                    <Text text="22 May 2004" />
+                                    <Label design="Bold" text="Location" />
+                                    <Text text="Ahmedabad, Gujarat, India" />
+                                    <Label design="Bold" text="Languages Known" />
+                                    <Text text="English, Hindi, Gujarati" />
+
+                                    <core:Title text="Professional Information" />
+
+                                    <Label design="Bold" text="Professional Title" />
+                                    <Text text="SAP FIORI/UI5 Developer" />
+                                    <Label design="Bold" text="Career Objective" />
+                                    <Text text="To secure a challenging position as an SAP Fiori/UI5 Developer where I can effectively contribute my skills and grow professionally while being resourceful and innovative." />
+                                    <Label design="Bold" text="Email" />
+                                    <Text text="kaushikboghani14@gmail.com" />
+                                    <Label design="Bold" text="Phone" />
+                                    <Text text="+91-9687466261" />
+                                    <Label design="Bold" text="LinkedIn" />
+                                    <Link text="linkedin.com/in/kaushikboghani" href="https://www.linkedin.com/in/kaushik-boghani-979719264/" target="_blank" />
+
+                                </form:content>
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+                <uxap:ObjectPageSection title="Education">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection title="School">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+                                <form:content>
+                                    <Title text="Secondary School Certificate" />
+                                    <Label design="Bold" text="Board" />
+                                    <Text text="GSEB" />
+                                    <Label design="Bold" text="School" />
+                                    <Text text="HR Gardi Highschool" />
+                                    <Label design="Bold" text="Year of Passing" />
+                                    <Text text="2019" />
+                                    <Label design="Bold" text="Location" />
+                                    <Text text="Ahemadabad" />
+                                    <Label design="Bold" text="Percentile Rank" />
+                                    <Text text="77.09" />
+                                </form:content>
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection showTitle="false" titleVisible="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+                                <form:content>
+                                    <Title text="Higher Secondary School Certificate" />
+                                    <Label design="Bold" text="Board" />
+                                    <Text text="GHSEB" />
+                                    <Label design="Bold" text="School" />
+                                    <Text text="Vivekanand School, Derdi Kumbhaji, Gujarat" />
+                                    <Label design="Bold" text="Year of Passing" />
+                                    <Text text="2021" />
+                                    <Label design="Bold" text="Location" />
+                                    <Text text="Ahemadabad" />
+                                    <Label design="Bold" text="Percentile Rank" />
+                                    <Text text="75.47" />
+                                </form:content>
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection title="College">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+                                <form:content>
+                                    <Title text="Bachelor of computer application" />
+                                    <Label design="Bold" text="University" />
+                                    <Text text="Monark University Vehlal" />
+                                    <Label design="Bold" text="College" />
+                                    <Text text="Rudra Goswami of Computer Engineering" />
+                                    <Label design="Bold" text="Duration" />
+                                    <Text text="2020 - 2023" />
+                                    <Label design="Bold" text="Location" />
+                                    <Text text="Ahemadabad" />
+                                    <Label design="Bold" text="CGPA / Percentage" />
+                                    <Text text="7.13" />
+                                </form:content>
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+                <uxap:ObjectPageSection title="Work Experience">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <form:SimpleForm width="100%" editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+
+                                <commons:Timeline alignment="Right" enableScroll="false" axisOrientation="Vertical" showHeaderBar="false" id="idTimeline" lazyLoading="true" growingThreshold="10" showIcons="true">
+                                    <commons:content>
+                                        <commons:TimelineItem id="idTemplateItem" status="Information" iconDisplayShape="Circle" iconSize="L" dateTime="24 Apr 2023 - 20 May 2024" text=" Completed 1-year training covering HTML, CSS, Bootstrap, JavaScript, jQuery, and Figma. Hands-on practice in web design and UI prototyping." title="Web Development Training" icon="sap-icon://learning-assistant" userName="kaushik boghani" select="onPressItems">
+                                        </commons:TimelineItem>
+                                        <commons:TimelineItem id="idTemplateItem2" status="Information" iconDisplayShape="Circle" iconSize="L" dateTime="06 Jun 2024 - Present" text=" Working as a SAP Fiori/UI5 Developer on enterprise applications. Involved in XML views, controller logic, OData integration, and responsive layouts." title="SAP Fiori/UI5 Developer" icon="sap-icon://employee" userName="kaushik boghani" select="onPressItems">
+                                        </commons:TimelineItem>
+                                    </commons:content>
+                                </commons:Timeline>
+
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+                <uxap:ObjectPageSection title="Skills">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+                            <f:GridList id="User_ID" noDataText="No User Data" borderReached=".onBorderReached">
+                                <f:customLayout>
+                                    <cssgrid:GridBoxLayout ></cssgrid:GridBoxLayout>
+                                </f:customLayout>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile html5">
+                                    <VBox fieldGroupIds="RouteView4" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="html5" width="3rem" />
+                                        <Text text="HTML5" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile css">
+                                    <VBox fieldGroupIds="RouteView2" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="css" width="3rem"/>
+                                        <Text text="CSS" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile bootstrap">
+                                    <VBox fieldGroupIds="RouteView3" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="bootstrap" width="3rem"/>
+                                        <Text text="BOOTSTRAP" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile javascript ">
+                                    <VBox fieldGroupIds="RouteView7" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="javascript" width="3rem" />
+                                        <Text text="JAVA SCRIPT" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile jquery">
+                                    <VBox fieldGroupIds="RouteView12" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="jquery" width="3rem" />
+                                        <Text text="JQUERY" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+
+                                <f:GridListItem type="Active" press="onSubCardPress" class="sapUiTinyMargin skillTile sapui5fiori">
+                                    <VBox fieldGroupIds="RouteView12" class="sapUiSmallMargin" justifyContent="Center" alignContent="Center" alignItems="Center">
+                                        <Image id="sapui5fiori" width="3rem" />
+                                        <Text text="SAPUI5/FIORI" wrapping="true" class="sapUiTinyMarginTop"/>
+                                    </VBox>
+                                </f:GridListItem>
+                            </f:GridList>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Certifications">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+
+                <uxap:ObjectPageSection title="Projects" showTitle="false">
+                    <uxap:subSections >
+
+                        <uxap:ObjectPageSubSection title="URS QR Scanner" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="URS QR Scanner"/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Aculife Healthcare"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox class="sapUiSmallMarginBegin">
+                                    <Text text="• Designed all Screens fully responsive in mobile, tablet and desktop."/>
+                                    <Text text="• The application is built using SAP Fiori/UI5, incorporating various controls such as Input, Button, FilterObject, Table (SAP.m.Table), Dialog, Fragment, Formatter, and Form to enhance user interaction."/>
+                                    <Text text="• Connected the application with OData services to perform CRUD (Create, Read, Update, Delete) operations, enabling real-time data synchronization with the backend."/>
+                                    <Text text="• This application works in both functionality QR scan and enter manually QR number."/>
+                                </VBox>
+                            </form:SimpleForm>
+
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection title="Sintex-Welspun" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="Barcode Scan Application for Process automation."/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Sintex-Welspun"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox class="sapUiSmallMarginBegin">
+                                    <Text text="• The application is built using SAP Fiori/UI5, incorporating various controls such as Input, Button, FilterObject, Table (SAP.m.Table), Dialog, Fragment, Formatter, and Form to enhance user interaction."/>
+                                    <Text text="• Connected the application with OData services to perform CRUD (Create, Read, Update, Delete) operations, enabling real-time data synchronization with the backend."/>
+                                    <Text text="• Configured proper binding and filtering of items in tables."/>
+                                    <Text text="• Applied formatters to customize the display of data in tables, including formatting dates, numbers, and status indicators."/>
+                                </VBox>
+                            </form:SimpleForm>
+
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSectiongit remote add origin https://github.com/kaushikboghani/Profile.git
+git branch -M main
+git push -u origin main title="Grew" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="Configuration/Activation of Standard Fiori Apps"/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Grew"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox class="sapUiSmallMarginBegin">
+                                    <Text text="• Activate standard SAPUI5 Application, OData service and assign Role."/>
+                                    <Text text="• Activated and set up standard SAP Fiori/UI5 applications to meet business needs."/>
+                                    <Text text="• Enabled and tested OData services for smooth data exchange between the frontend and backend."/>
+                                    <Text text="• Assigned the right user roles to ensure secure access to applications."/>
+                                </VBox>
+                            </form:SimpleForm>
+
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection title="Wolkem" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="Configuration/Activation of Standard Fiori Apps"/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Wolkem"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox>
+                                    <Text text="• Activate standard SAPUI5 Application, OData service and assign Role."/>
+                                    <Text text="• Activated and set up standard SAP Fiori/UI5 applications to meet business needs."/>
+                                    <Text text="• Enabled and tested OData services for smooth data exchange between the frontend and backend."/>
+                                    <Text text="• Assigned the right user roles to ensure secure access to applications."/>
+                                </VBox>
+
+                            </form:SimpleForm>
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection title="TickeTalk" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="TickeTalk"/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Internal Project"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox class="sapUiSmallMarginBegin">
+                                    <Text text="• Designed all Screens fully responsive in mobile, tablet and desktop. "/>
+                                    <Text text="• Used functionalities like ticket Creating interface using Rich Text editor, Attachment upload and file data conversion to store in backend table"/>
+                                    <Text text="• Added Chat box functionality to view the conversation between support team and client"/>
+                                </VBox>
+                            </form:SimpleForm>
+
+                        </uxap:ObjectPageSubSection>
+
+                        <uxap:ObjectPageSubSection title="Conference Room Booking" showTitle="false">
+                            <form:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <Label text="Project" design="Bold"/>
+                                <Text text="Conference Room Booking"/>
+
+                                <Label text="Client" design="Bold"/>
+                                <Text text="Internal Project"/>
+
+                                <Label text="Role" design="Bold"/>
+                                <Text text="SAP UI5/Fiori Consultant"/>
+
+                                <Label text="Responsibilities" design="Bold"/>
+                                <VBox class="sapUiSmallMarginBegin">
+                                    <Text text="• Connected the application with OData services to perform CRUD (Create, Read, Update, Delete) operations, enabling real-time data synchronization with the backend. "/>
+                                    <Text text="• Configured proper binding and filtering of items in GridlistItem. ."/>
+                                    <Text text="• Applied formatters to customize the display of data in GridlistItem, including formatting dates, numbers, and status indicators"/>
+                                    <Text text="• Contributed to improving the user experience through responsive design and streamlined workflows for conference room booking management."/>
+                                </VBox>
+                            </form:SimpleForm>
+
+                        </uxap:ObjectPageSubSection>
+
+
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+                <uxap:ObjectPageSection title="Contacts">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection>
+
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+            </uxap:sections>
+        </uxap:ObjectPageLayout>
+
+
+
+
+    </Page>
+</mvc:View>

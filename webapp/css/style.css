@@ -1,0 +1,13 @@
+.skillTile {
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    padding: 0.5rem;
+  }
+.skillTile.html5:hover { background-color: #ffe5e0; }     
+.skillTile.css:hover { background-color: #e0f0ff; }        
+.skillTile.bootstrap:hover { background-color: #f0e8ff; }  
+.skillTile.javascript:hover { background-color: #fff8e0; }
+.skillTile.jquery:hover { background-color: #e8f7ff; }     
+/* .skillTile.sapui5fiori:hover { background-color: #b7d5f2; } */
